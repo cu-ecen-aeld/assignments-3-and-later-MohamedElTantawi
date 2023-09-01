@@ -1,0 +1,162 @@
+[2023-09-01 12:21:47Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-09-01 12:21:47Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:47Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:47Z INFO HostContext] Well known config file 'Credentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials'
+[2023-09-01 12:21:47Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:47Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:47Z INFO HostContext] Well known config file 'Runner': '/home/tantawi/Desktop/Assignments/actions-runner/.runner'
+[2023-09-01 12:21:47Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-09-01 12:21:47Z INFO Listener] RuntimeInformation: Linux 6.2.0-26-generic #26~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jul 13 16:27:29 UTC 2.
+[2023-09-01 12:21:47Z INFO Listener] Version: 2.308.0
+[2023-09-01 12:21:47Z INFO Listener] Commit: 7f7ff150c6d2ee316c523be6325188853dfae45d
+[2023-09-01 12:21:47Z INFO Listener] Culture: en-US
+[2023-09-01 12:21:47Z INFO Listener] UI Culture: en-US
+[2023-09-01 12:21:47Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:47Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:47Z INFO Listener] Validating directory permissions for: '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:47Z INFO CommandLineParser] Parse
+[2023-09-01 12:21:47Z INFO CommandLineParser] Parsing 1 args
+[2023-09-01 12:21:47Z INFO CommandLineParser] parsing argument
+[2023-09-01 12:21:47Z INFO CommandLineParser] HasArgs: False
+[2023-09-01 12:21:47Z INFO CommandLineParser] Adding Command: run
+[2023-09-01 12:21:47Z INFO Listener] Arguments parsed
+[2023-09-01 12:21:48Z INFO Runner] ExecuteCommand
+[2023-09-01 12:21:48Z INFO ConfigurationStore] currentAssemblyLocation: /home/tantawi/Desktop/Assignments/actions-runner/bin/Runner.Listener.dll
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] binPath: /home/tantawi/Desktop/Assignments/actions-runner/bin
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] RootFolder: /home/tantawi/Desktop/Assignments/actions-runner
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:48Z INFO HostContext] Well known config file 'Runner': '/home/tantawi/Desktop/Assignments/actions-runner/.runner'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] ConfigFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.runner
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:48Z INFO HostContext] Well known config file 'Credentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] CredFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.credentials
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:48Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials_migrated'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] MigratedCredFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.credentials_migrated
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:48Z INFO HostContext] Well known config file 'Service': '/home/tantawi/Desktop/Assignments/actions-runner/.service'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] ServiceConfigFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.service
+[2023-09-01 12:21:48Z INFO CommandSettings] Flag 'help': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Flag 'version': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Flag 'check': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Command 'configure': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Command 'remove': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-09-01 12:21:48Z INFO ConfigurationManager] LoadSettings
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsConfigured()
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsConfigured: True
+[2023-09-01 12:21:48Z INFO ConfigurationManager] Is configured: True
+[2023-09-01 12:21:48Z INFO ConfigurationStore] Read setting file: 342 chars
+[2023-09-01 12:21:48Z INFO ConfigurationManager] Settings Loaded
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-09-01 12:21:48Z INFO CommandSettings] Command 'run': 'True'
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsConfigured()
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsConfigured: True
+[2023-09-01 12:21:48Z INFO ConfigurationManager] Is configured: True
+[2023-09-01 12:21:48Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-09-01 12:21:48Z INFO Runner] Set runner startup type - Manual
+[2023-09-01 12:21:48Z INFO CommandSettings] Flag 'once': 'False'
+[2023-09-01 12:21:48Z INFO CommandSettings] Flag 'once': 'False'
+[2023-09-01 12:21:48Z INFO Runner] RunAsync
+[2023-09-01 12:21:48Z INFO ConfigurationManager] LoadSettings
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsConfigured()
+[2023-09-01 12:21:48Z INFO ConfigurationStore] IsConfigured: True
+[2023-09-01 12:21:48Z INFO ConfigurationManager] Is configured: True
+[2023-09-01 12:21:48Z INFO ConfigurationManager] Settings Loaded
+[2023-09-01 12:21:48Z INFO MessageListener] {
+  "AgentId": 3,
+  "AgentName": "tantawi-HP-Pavilion-15-Notebook-PC",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus8.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi",
+  "WorkFolder": "_work"
+}
+[2023-09-01 12:21:48Z INFO MessageListener] Loading Credentials
+[2023-09-01 12:21:48Z INFO ConfigurationStore] HasCredentials()
+[2023-09-01 12:21:48Z INFO ConfigurationStore] stored True
+[2023-09-01 12:21:48Z INFO CredentialManager] GetCredentialProvider
+[2023-09-01 12:21:48Z INFO CredentialManager] Creating type OAuth
+[2023-09-01 12:21:48Z INFO CredentialManager] Creating credential type: OAuth
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:21:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-09-01 12:21:48Z INFO HostContext] Well known config file 'RSACredentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials_rsaparams'
+[2023-09-01 12:21:48Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/tantawi/Desktop/Assignments/actions-runner/.credentials_rsaparams
+[2023-09-01 12:21:48Z INFO MessageListener] Attempt to create session.
+[2023-09-01 12:21:48Z INFO MessageListener] Connecting to the Runner Server...
+[2023-09-01 12:21:48Z INFO RunnerServer] EstablishVssConnection
+[2023-09-01 12:21:48Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-09-01 12:21:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-01 12:21:48Z INFO RunnerServer] EstablishVssConnection
+[2023-09-01 12:21:48Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-01 12:21:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-01 12:21:48Z INFO RunnerServer] EstablishVssConnection
+[2023-09-01 12:21:48Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-01 12:21:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-01 12:21:51Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-01 12:21:51Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-01 12:21:52Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-01 12:21:52Z INFO MessageListener] VssConnection created
+[2023-09-01 12:21:52Z INFO Terminal] WRITE LINE: 
+[2023-09-01 12:21:52Z INFO Terminal] WRITE LINE: 
+[2023-09-01 12:21:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/tantawi/Desktop/Assignments/actions-runner/.credentials_rsaparams
+[2023-09-01 12:21:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/tantawi/Desktop/Assignments/actions-runner/.credentials_rsaparams
+[2023-09-01 12:21:55Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-09-01 12:21:55Z INFO MessageListener] Session created.
+[2023-09-01 12:21:55Z INFO Terminal] WRITE LINE: Current runner version: '2.308.0'
+[2023-09-01 12:21:55Z INFO Terminal] WRITE LINE: 2023-09-01 12:21:55Z: Listening for Jobs
+[2023-09-01 12:21:55Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-09-01 12:22:14Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/tantawi/Desktop/Assignments/actions-runner/.credentials_rsaparams
+[2023-09-01 12:22:14Z INFO MessageListener] Message '34' received from session 'b9685a6c-033e-4768-a5f7-e54f1de91b3a'.
+[2023-09-01 12:22:14Z INFO Runner] Received job message of length 24544 from service, with hash '990ac1115641e6b36cb3fed4d6ae3e35a9654e1c441da2c2bd7f8ae34d21ce0a'
+[2023-09-01 12:22:14Z INFO JobDispatcher] Job request 37 for plan b74e65de-f811-4d9e-91ac-04178769dbd4 job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2023-09-01 12:22:14Z INFO JobDispatcher] Pull OrchestrationId b74e65de-f811-4d9e-91ac-04178769dbd4.full-test.__default from JWT claims
+[2023-09-01 12:22:14Z INFO Terminal] WRITE LINE: 2023-09-01 12:22:14Z: Running job: full-test
+[2023-09-01 12:22:14Z INFO JobDispatcher] Start renew job request 37 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-09-01 12:22:14Z INFO JobDispatcher] Successfully renew job request 37, job is valid till 9/1/2023 12:32:14 PM
+[2023-09-01 12:22:14Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper] Starting process:
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   File name: '/home/tantawi/Desktop/Assignments/actions-runner/bin/Runner.Worker'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 107 110'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-09-01 12:22:14Z INFO ProcessInvokerWrapper] Process started with process id 1634934, waiting for process exit.
+[2023-09-01 12:22:14Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-09-01 12:22:14Z INFO ProcessChannel] Sending message of length 24544, with hash '990ac1115641e6b36cb3fed4d6ae3e35a9654e1c441da2c2bd7f8ae34d21ce0a'
+[2023-09-01 12:22:14Z INFO JobNotification] Entering JobStarted Notification
+[2023-09-01 12:22:14Z INFO JobNotification] Entering StartMonitor
+[2023-09-01 12:22:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-01 12:22:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-01 12:22:38Z INFO ProcessInvokerWrapper] Finished process 1634934 with exit code 102, and elapsed time 00:00:23.5530707.
+[2023-09-01 12:22:38Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2023-09-01 12:22:38Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2023-09-01 12:22:38Z INFO Terminal] WRITE LINE: 2023-09-01 12:22:38Z: Job full-test completed with result: Failed
+[2023-09-01 12:22:38Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-09-01 12:22:38Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 37.
+[2023-09-01 12:22:38Z INFO JobNotification] Entering JobCompleted Notification
+[2023-09-01 12:22:38Z INFO JobNotification] Entering EndMonitor
+[2023-09-01 12:26:15Z INFO Terminal] WRITE LINE: Exiting...
+[2023-09-01 12:26:15Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-09-01 12:26:15Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-09-01 12:26:15Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2023-09-01 12:26:15Z WARN GitHubActionsService] GET request to https://pipelinesghubeus8.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/_apis/distributedtask/pools/1/messages?sessionId=b9685a6c-033e-4768-a5f7-e54f1de91b3a&lastMessageId=34&status=Online&runnerVersion=2.308.0 has been cancelled.
+[2023-09-01 12:26:15Z INFO MessageListener] Get next message has been cancelled.
+[2023-09-01 12:26:15Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2023-09-01 12:26:15Z INFO JobDispatcher] Ensure WorkerDispather for job a047640a-23da-5e9b-1ef8-917a09b3753a run to finish, cancel any running job.
+[2023-09-01 12:26:15Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2023-09-01 12:26:16Z INFO Listener] Runner execution been cancelled.

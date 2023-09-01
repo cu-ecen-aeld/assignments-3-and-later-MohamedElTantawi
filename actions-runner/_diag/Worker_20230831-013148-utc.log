@@ -1,0 +1,3266 @@
+[2023-08-31 01:31:48Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO HostContext] Well known config file 'Credentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO HostContext] Well known config file 'Runner': '/home/tantawi/Desktop/Assignments/actions-runner/.runner'
+[2023-08-31 01:31:48Z INFO Worker] Version: 2.308.0
+[2023-08-31 01:31:48Z INFO Worker] Commit: 7f7ff150c6d2ee316c523be6325188853dfae45d
+[2023-08-31 01:31:48Z INFO Worker] Culture: en-US
+[2023-08-31 01:31:48Z INFO Worker] UI Culture: en-US
+[2023-08-31 01:31:48Z INFO Worker] Waiting to receive the job message from the channel.
+[2023-08-31 01:31:48Z INFO ProcessChannel] Receiving message of length 24543, with hash 'b674a91b8681bf820785a898d3942999a580376148a4e59f5ca113e33349086e'
+[2023-08-31 01:31:48Z INFO Worker] Message received.
+[2023-08-31 01:31:48Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/mainnn.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 14,
+        "col": 19,
+        "lit": "Checkout submodules"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 15,
+              "col": 19,
+              "lit": "git submodule update --init --recursive"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 19,
+        "lit": "Run unit test"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 18,
+              "lit": "./unit-test.sh"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "8615dfaf-7ef8-510a-52bc-76337457853a",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2023-08-31 01:31:46+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "17"
+    },
+    "build.containerId": {
+      "value": "18184942"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/mainnn.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "unit-test"
+    },
+    "system.phaseId": {
+      "value": "f9b18aa4-1325-5d63-b757-65b914572d7c"
+    },
+    "system.phaseName": {
+      "value": "unit-test"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "unit-test.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "unit-test"
+    },
+    "system.jobDisplayName": {
+      "value": "unit-test"
+    },
+    "system.jobId": {
+      "value": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://actions-results-receiver-production.githubapp.com"
+    },
+    "system.orchestrationId": {
+      "value": "da5db77c-7fad-4ac4-b5e1-025b5df0e0b7.unit-test.__default"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 33,
+    "planId": "da5db77c-7fad-4ac4-b5e1-025b5df0e0b7",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/17",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "assignment-1-MohamedElTantawi"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "cu-ecen-aeld"
+    }
+  },
+  "timeline": {
+    "id": "da5db77c-7fad-4ac4-b5e1-025b5df0e0b7",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171",
+  "jobDisplayName": "unit-test",
+  "jobName": "__default",
+  "jobContainer": {
+    "type": 0,
+    "file": 1,
+    "line": 10,
+    "col": 20,
+    "lit": "cuaesd/aesd-autotest:unit-test"
+  },
+  "requestId": 32,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "6b78e13d-b1ef-4f0d-b5fa-3fd1e665cf60",
+          "ServerName": "NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7/timelines/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7/records/0e10f8dd-85b5-5bee-19c6-47fc7db6f171/feedstream?api-version=6.0-preview",
+          "ConnectivityChecks": "[\"https://acghubeus0.actions.githubusercontent.com/_apis/health\",\"https://actions-results-receiver-production.githubapp.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+        },
+        {
+          "k": "repository",
+          "v": "cu-ecen-aeld/assignment-1-MohamedElTantawi"
+        },
+        {
+          "k": "repository_owner",
+          "v": "cu-ecen-aeld"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "49594950"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi.git"
+        },
+        {
+          "k": "run_id",
+          "v": "6031953369"
+        },
+        {
+          "k": "run_number",
+          "v": "5"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "enterprise-managed-business-id",
+          "v": ""
+        },
+        {
+          "k": "repository_id",
+          "v": "683087025"
+        },
+        {
+          "k": "actor_id",
+          "v": "86000025"
+        },
+        {
+          "k": "actor",
+          "v": "MohamedElTantawi"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "MohamedElTantawi"
+        },
+        {
+          "k": "workflow",
+          "v": "assignment-test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "8feb69954e35f863c1bba459d3ebac2ab3497701"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "86000025+MohamedElTantawi@users.noreply.github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Mohamed  Tantawi"
+                              },
+                              {
+                                "k": "username",
+                                "v": "MohamedElTantawi"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update autotest-validate.c"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2023-08-31T04:30:29+03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "981efbe33a564113befff9fb7b342eef8a2c1bd3"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi/commit/ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi/compare/8feb69954e35...ac7f5719868c"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "86000025+MohamedElTantawi@users.noreply.github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Mohamed  Tantawi"
+                          },
+                          {
+                            "k": "username",
+                            "v": "MohamedElTantawi"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update autotest-validate.c"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2023-08-31T04:30:29+03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "981efbe33a564113befff9fb7b342eef8a2c1bd3"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi/commit/ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "organization",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Course Github Organization for University of Colorado at Boulder ECEN 5713 Advanced Embedded Software Development (previously 5013-002)"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/events"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/hooks"
+                    },
+                    {
+                      "k": "id",
+                      "v": 49594950.0
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/issues"
+                    },
+                    {
+                      "k": "login",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/members{/member}"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                    },
+                    {
+                      "k": "public_members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/public_members{/member}"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/repos"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "86000025+MohamedElTantawi@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "MohamedElTantawi"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1692976079.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "assignment-1-MohamedElTantawi created by GitHub Classroom"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "cu-ecen-aeld/assignment-1-MohamedElTantawi"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi"
+                    },
+                    {
+                      "k": "id",
+                      "v": 683087025.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Shell"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "assignment-1-MohamedElTantawi"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOKLcUsQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "organization",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": null
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/cu-ecen-aeld"
+                          },
+                          {
+                            "k": "id",
+                            "v": 49594950.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "name",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "Organization"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1693445429.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 35.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:cu-ecen-aeld/assignment-1-MohamedElTantawi.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-MohamedElTantawi/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2023-08-30T23:06:17Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-MohamedElTantawi"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/86000025?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/MohamedElTantawi"
+                    },
+                    {
+                      "k": "id",
+                      "v": 86000025.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "MohamedElTantawi"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjg2MDAwMDI1"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/MohamedElTantawi/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/MohamedElTantawi"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "cu-ecen-aeld/assignment-1-MohamedElTantawi/.github/workflows/mainnn.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "ac7f5719868c28716ba8ffe9cdefee06fa60a455"
+        }
+      ]
+    },
+    "run-feature-flags": {
+      "t": 2,
+      "d": [
+        {
+          "k": "actions_stream_logs_via_results_service",
+          "v": false
+        },
+        {
+          "k": "actions_use_results_service",
+          "v": true
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2023-08-31 01:31:48Z INFO JobRunner] Job ID 0e10f8dd-85b5-5bee-19c6-47fc7db6f171
+[2023-08-31 01:31:48Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/
+[2023-08-31 01:31:48Z INFO ConfigurationStore] currentAssemblyLocation: /home/tantawi/Desktop/Assignments/actions-runner/bin/Runner.Worker.dll
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO ConfigurationStore] binPath: /home/tantawi/Desktop/Assignments/actions-runner/bin
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO ConfigurationStore] RootFolder: /home/tantawi/Desktop/Assignments/actions-runner
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO HostContext] Well known config file 'Runner': '/home/tantawi/Desktop/Assignments/actions-runner/.runner'
+[2023-08-31 01:31:48Z INFO ConfigurationStore] ConfigFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.runner
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO HostContext] Well known config file 'Credentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials'
+[2023-08-31 01:31:48Z INFO ConfigurationStore] CredFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.credentials
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials_migrated'
+[2023-08-31 01:31:48Z INFO ConfigurationStore] MigratedCredFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.credentials_migrated
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:48Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:48Z INFO HostContext] Well known config file 'Service': '/home/tantawi/Desktop/Assignments/actions-runner/.service'
+[2023-08-31 01:31:48Z INFO ConfigurationStore] ServiceConfigFilePath: /home/tantawi/Desktop/Assignments/actions-runner/.service
+[2023-08-31 01:31:48Z INFO ConfigurationStore] Read setting file: 342 chars
+[2023-08-31 01:31:49Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-08-31 01:31:49Z INFO Worker] Listening for cancel message from the channel.
+[2023-08-31 01:31:49Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2023-08-31 01:31:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-08-31 01:31:50Z INFO JobServer] Creating websocket client ...wss://pipelines.actions.githubusercontent.com/NpzjOT6UYCFhI2eip589GvPMjQAgYzvYk7wEEVPBicSraWK0yK/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7/timelines/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7/records/0e10f8dd-85b5-5bee-19c6-47fc7db6f171/feedstream?api-version=6.0-preview
+[2023-08-31 01:31:50Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2023-08-31 01:31:50Z INFO JobServerQueue] Initializing results client
+[2023-08-31 01:31:50Z INFO JobServerQueue] Start process web console line queue.
+[2023-08-31 01:31:50Z INFO JobServerQueue] Start process file upload queue.
+[2023-08-31 01:31:50Z INFO JobServerQueue] Start results file upload queue.
+[2023-08-31 01:31:50Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-08-31 01:31:50Z INFO JobServerQueue] Start process timeline update queue.
+[2023-08-31 01:31:50Z INFO ExecutionContext] Initialize GitHub context
+[2023-08-31 01:31:50Z INFO ExecutionContext] Initialize Env context
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:50Z INFO JobRunner] Starting the job execution context.
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO JobRunner] Validating directory permissions for: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Tools': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_tool'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:50Z INFO JobRunner] Getting job extension.
+[2023-08-31 01:31:50Z INFO JobRunner] Initialize job. Getting all job steps.
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known config file 'Credentials': '/home/tantawi/Desktop/Assignments/actions-runner/.credentials'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known config file 'SetupInfo': '/home/tantawi/Desktop/Assignments/actions-runner/.setup_info'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/tantawi/Desktop/Assignments/actions-runner/_work/_PipelineMapping/cu-ecen-aeld/assignment-1-MohamedElTantawi/PipelineFolder.json
+[2023-08-31 01:31:50Z INFO PipelineDirectoryManager] Updating job run properties.
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Tools': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_tool'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Externals': '/home/tantawi/Desktop/Assignments/actions-runner/externals'
+[2023-08-31 01:31:50Z INFO JobExtension] Downloading actions
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:50Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:51Z INFO JobServer] Successfully started websocket client.
+[2023-08-31 01:31:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3558aa23-2adc-47e1-aedc-417b27a2bf19', success rate: 1/1.
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:51Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:51Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/ee0669bd1cc54295c223e0bb666b733df41de1c5' into /home/tantawi/Desktop/Assignments/actions-runner/_work/_actions/_temp_26e8f2cb-7ad8-4276-b173-81c105e5fb07/f74d9ed9-fd06-4689-8c47-36b63e7f9496.tar.gz.
+[2023-08-31 01:31:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3558aa23-2adc-47e1-aedc-417b27a2bf19', success rate: 1/1.
+[2023-08-31 01:31:52Z INFO ActionManager] Which: 'tar'
+[2023-08-31 01:31:52Z INFO ActionManager] Location: '/usr/bin/tar'
+[2023-08-31 01:31:52Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions/_temp_26e8f2cb-7ad8-4276-b173-81c105e5fb07/f74d9ed9-fd06-4689-8c47-36b63e7f9496.tar.gz"'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions/_temp_26e8f2cb-7ad8-4276-b173-81c105e5fb07/_staging'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603099.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Process started with process id 1603099, waiting for process exit.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Finished process 1603099 with exit code 0, and elapsed time 00:00:00.0372768.
+[2023-08-31 01:31:52Z INFO ActionManager] Finished getting action repository.
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:52Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:52Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-08-31 01:31:52Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:52Z INFO ActionManager] Load action that reference repository from '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:52Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-08-31 01:31:52Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-08-31 01:31:52Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-08-31 01:31:52Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-08-31 01:31:52Z INFO DockerCommandManager] Which: 'docker'
+[2023-08-31 01:31:52Z INFO DockerCommandManager] Location: '/usr/bin/docker'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO JobExtension] Adding .
+[2023-08-31 01:31:52Z INFO JobExtension] Adding .
+[2023-08-31 01:31:52Z INFO JobExtension] Adding .
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO JobExtension] Total accessible running process: 264.
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:52Z INFO JobExtension] Start checking server connectivity.
+[2023-08-31 01:31:52Z INFO JobExtension] Check server connectivity for https://acghubeus0.actions.githubusercontent.com/_apis/health.
+[2023-08-31 01:31:52Z INFO JobExtension] Check server connectivity for https://actions-results-receiver-production.githubapp.com/health.
+[2023-08-31 01:31:52Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "3558aa23-2adc-47e1-aedc-417b27a2bf19",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2023-08-31T01:31:50.6659292Z",
+  "finishTime": "2023-08-31T01:31:52.8093005Z"
+}.
+[2023-08-31 01:31:52Z INFO JobRunner] Total job steps: 4.
+[2023-08-31 01:31:52Z INFO JobRunner] Run all job steps.
+[2023-08-31 01:31:52Z INFO StepsRunner] Processing step: DisplayName='Initialize containers'
+[2023-08-31 01:31:52Z INFO StepsRunner] Evaluating: success()
+[2023-08-31 01:31:52Z INFO StepsRunner] Result: true
+[2023-08-31 01:31:52Z INFO StepsRunner] Starting the step.
+[2023-08-31 01:31:52Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:52Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Server.APIVersion}}''
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603104.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Process started with process id 1603104, waiting for process exit.
+[2023-08-31 01:31:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3558aa23-2adc-47e1-aedc-417b27a2bf19', success rate: 1/1.
+[2023-08-31 01:31:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e47f97c5-3f02-49fe-ac5c-32d54722dc83', success rate: 1/1.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Finished process 1603104 with exit code 0, and elapsed time 00:00:00.0508060.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Client.APIVersion}}''
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603117.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Process started with process id 1603117, waiting for process exit.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:52Z INFO ProcessInvokerWrapper] Finished process 1603117 with exit code 0, and elapsed time 00:00:00.0553663.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --quiet --no-trunc --filter "label=f95295"'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603131.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Process started with process id 1603131, waiting for process exit.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Finished process 1603131 with exit code 0, and elapsed time 00:00:00.0364333.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Arguments: 'network prune --force --filter "label=f95295"'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603137.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Process started with process id 1603137, waiting for process exit.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Finished process 1603137 with exit code 0, and elapsed time 00:00:00.0300256.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Arguments: 'network create --label f95295 github_network_b65ef11e247a4d0492c34244a598b649'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603144.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Process started with process id 1603144, waiting for process exit.
+[2023-08-31 01:31:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e47f97c5-3f02-49fe-ac5c-32d54722dc83', success rate: 1/1.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Finished process 1603144 with exit code 0, and elapsed time 00:00:00.1195891.
+[2023-08-31 01:31:53Z INFO ContainerOperationProvider] Container name: 57a59074a174495796304ce61922a100
+[2023-08-31 01:31:53Z INFO ContainerOperationProvider] Container image: cuaesd/aesd-autotest:unit-test
+[2023-08-31 01:31:53Z INFO ContainerOperationProvider] Container options: 
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Arguments: 'pull cuaesd/aesd-autotest:unit-test'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603184.
+[2023-08-31 01:31:53Z INFO ProcessInvokerWrapper] Process started with process id 1603184, waiting for process exit.
+[2023-08-31 01:31:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e47f97c5-3f02-49fe-ac5c-32d54722dc83', success rate: 1/1.
+[2023-08-31 01:31:53Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:31:53Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_3558aa23-2adc-47e1-aedc-417b27a2bf19.1
+[2023-08-31 01:31:53Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-08-31 01:31:54Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Finished process 1603184 with exit code 0, and elapsed time 00:00:01.5297792.
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Externals': '/home/tantawi/Desktop/Assignments/actions-runner/externals'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Externals': '/home/tantawi/Desktop/Assignments/actions-runner/externals'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Tools': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_tool'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Tools': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_tool'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:54Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Arguments: 'create --name 57a59074a174495796304ce61922a100_cuaesdaesdautotestunittest_4fc1ab --label f95295 --workdir /__w/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi --network github_network_b65ef11e247a4d0492c34244a598b649  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/tantawi/Desktop/Assignments/actions-runner/_work":"/__w" -v "/home/tantawi/Desktop/Assignments/actions-runner/externals":"/__e":ro -v "/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp":"/__w/_temp" -v "/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions":"/__w/_actions" -v "/home/tantawi/Desktop/Assignments/actions-runner/_work/_tool":"/__w/_tool" -v "/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_github_home":"/github/home" -v "/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" cuaesd/aesd-autotest:unit-test "-f" "/dev/null"'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603206.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Process started with process id 1603206, waiting for process exit.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Finished process 1603206 with exit code 0, and elapsed time 00:00:00.1231295.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Arguments: 'start 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603213.
+[2023-08-31 01:31:54Z INFO ProcessInvokerWrapper] Process started with process id 1603213, waiting for process exit.
+[2023-08-31 01:31:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e47f97c5-3f02-49fe-ac5c-32d54722dc83', success rate: 1/1.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Finished process 1603213 with exit code 0, and elapsed time 00:00:00.4860006.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --filter id=4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603306.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Process started with process id 1603306, waiting for process exit.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Finished process 1603306 with exit code 0, and elapsed time 00:00:00.0209918.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Arguments: 'inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603312.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Process started with process id 1603312, waiting for process exit.
+[2023-08-31 01:31:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e47f97c5-3f02-49fe-ac5c-32d54722dc83', success rate: 1/1.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Finished process 1603312 with exit code 0, and elapsed time 00:00:00.0286541.
+[2023-08-31 01:31:55Z INFO StepsRunner] Step result: 
+[2023-08-31 01:31:55Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "initialize_containers",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "e47f97c5-3f02-49fe-ac5c-32d54722dc83",
+  "stepContextName": "e47f97c53f0249feac5c32d54722dc83",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2023-08-31T01:31:52.8417691Z",
+  "finishTime": "2023-08-31T01:31:55.4785428Z"
+}.
+[2023-08-31 01:31:55Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-08-31 01:31:55Z INFO StepsRunner] Current state: job state = ''
+[2023-08-31 01:31:55Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2023-08-31 01:31:55Z INFO StepsRunner] Evaluating: success()
+[2023-08-31 01:31:55Z INFO StepsRunner] Result: true
+[2023-08-31 01:31:55Z INFO StepsRunner] Starting the step.
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:55Z INFO ActionManager] Load action that reference repository from '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-08-31 01:31:55Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-08-31 01:31:55Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-08-31 01:31:55Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:55Z INFO ExecutionContext] Write event payload to /home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:55Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "cu-ecen-aeld/assignment-1-MohamedElTantawi"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-08-31 01:31:55Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:31:55Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command error
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command group
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-08-31 01:31:55Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Arguments: 'exec  4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 sh -c "cat /etc/*release | grep ^ID"'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603321.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Process started with process id 1603321, waiting for process exit.
+[2023-08-31 01:31:55Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:31:55Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_e47f97c5-3f02-49fe-ac5c-32d54722dc83.1
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Finished process 1603321 with exit code 0, and elapsed time 00:00:00.1262314.
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Externals': '/home/tantawi/Desktop/Assignments/actions-runner/externals'
+[2023-08-31 01:31:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e47f97c5-3f02-49fe-ac5c-32d54722dc83', success rate: 1/1.
+[2023-08-31 01:31:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:55Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 /__e/node16/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603344.
+[2023-08-31 01:31:55Z INFO ProcessInvokerWrapper] Process started with process id 1603344, waiting for process exit.
+[2023-08-31 01:31:56Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2023-08-31 01:31:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-08-31 01:31:56Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-08-31 01:31:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-08-31 01:31:56Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2023-08-31 01:31:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Finished process 1603344 with exit code 0, and elapsed time 00:00:01.6095582.
+[2023-08-31 01:31:57Z INFO CreateStepSummaryCommand] Step Summary file (/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_runner_file_commands/step_summary_60dfc6b8-2c92-4327-8e52-edb78ad44d53) is empty; skipping attachment upload
+[2023-08-31 01:31:57Z INFO StepsRunner] Step result: 
+[2023-08-31 01:31:57Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node16",
+  "stage": "Main",
+  "stepId": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2023-08-31T01:31:55.479675Z",
+  "finishTime": "2023-08-31T01:31:57.3478225Z"
+}.
+[2023-08-31 01:31:57Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-08-31 01:31:57Z INFO StepsRunner] Current state: job state = ''
+[2023-08-31 01:31:57Z INFO StepsRunner] Processing step: DisplayName='Checkout submodules'
+[2023-08-31 01:31:57Z INFO StepsRunner] Evaluating: success()
+[2023-08-31 01:31:57Z INFO StepsRunner] Result: true
+[2023-08-31 01:31:57Z INFO StepsRunner] Starting the step.
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:57Z INFO ExecutionContext] Write event payload to /home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-08-31 01:31:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command error
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command group
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:57Z INFO ScriptHandler] Which: 'bash'
+[2023-08-31 01:31:57Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 sh -e /__w/_temp/ccb1e9b1-d790-4eae-a5f3-ee9833264d05.sh'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603480.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Process started with process id 1603480, waiting for process exit.
+[2023-08-31 01:31:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-08-31 01:31:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '145553fb-1baa-5bc7-b18e-5469e21587f7', success rate: 1/1.
+[2023-08-31 01:31:57Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:31:57Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_a878fecf-9250-57e2-84e0-aae0213d4ecb.1
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Finished process 1603480 with exit code 0, and elapsed time 00:00:00.2153800.
+[2023-08-31 01:31:57Z INFO CreateStepSummaryCommand] Step Summary file (/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_runner_file_commands/step_summary_6ba1d2c6-8235-4988-8ebb-1426361a8730) is empty; skipping attachment upload
+[2023-08-31 01:31:57Z INFO StepsRunner] Step result: 
+[2023-08-31 01:31:57Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-08-31T01:31:57.3489029Z",
+  "finishTime": "2023-08-31T01:31:57.6083263Z"
+}.
+[2023-08-31 01:31:57Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-08-31 01:31:57Z INFO StepsRunner] Current state: job state = ''
+[2023-08-31 01:31:57Z INFO StepsRunner] Processing step: DisplayName='Run unit test'
+[2023-08-31 01:31:57Z INFO StepsRunner] Evaluating: success()
+[2023-08-31 01:31:57Z INFO StepsRunner] Result: true
+[2023-08-31 01:31:57Z INFO StepsRunner] Starting the step.
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:57Z INFO ExecutionContext] Write event payload to /home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-08-31 01:31:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command error
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command group
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-08-31 01:31:57Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:31:57Z INFO ScriptHandler] Which: 'bash'
+[2023-08-31 01:31:57Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:31:57Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 sh -e /__w/_temp/39c5ee88-8b12-4d4b-a2f0-b45c1be084d7.sh'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603559.
+[2023-08-31 01:31:57Z INFO ProcessInvokerWrapper] Process started with process id 1603559, waiting for process exit.
+[2023-08-31 01:31:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:58Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2023-08-31 01:31:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:59Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2023-08-31 01:31:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:59Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:31:59Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_145553fb-1baa-5bc7-b18e-5469e21587f7.1
+[2023-08-31 01:31:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:31:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:32:00Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2023-08-31 01:32:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Finished process 1603559 with exit code 0, and elapsed time 00:00:02.8384268.
+[2023-08-31 01:32:00Z INFO CreateStepSummaryCommand] Step Summary file (/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_runner_file_commands/step_summary_bf847774-128c-4102-a548-86dcb261263a) is empty; skipping attachment upload
+[2023-08-31 01:32:00Z INFO StepsRunner] Step result: 
+[2023-08-31 01:32:00Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "8615dfaf-7ef8-510a-52bc-76337457853a",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2023-08-31T01:31:57.6091001Z",
+  "finishTime": "2023-08-31T01:32:00.4591562Z"
+}.
+[2023-08-31 01:32:00Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-08-31 01:32:00Z INFO StepsRunner] Current state: job state = ''
+[2023-08-31 01:32:00Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2023-08-31 01:32:00Z INFO StepsRunner] Evaluating: always()
+[2023-08-31 01:32:00Z INFO StepsRunner] Result: true
+[2023-08-31 01:32:00Z INFO StepsRunner] Starting the step.
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:32:00Z INFO ActionManager] Load action that reference repository from '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Actions': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_actions'
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-08-31 01:32:00Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-08-31 01:32:00Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-08-31 01:32:00Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:32:00Z INFO ExecutionContext] Write event payload to /home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Temp': '/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp'
+[2023-08-31 01:32:00Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "cu-ecen-aeld/assignment-1-MohamedElTantawi"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-08-31 01:32:00Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-08-31 01:32:00Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command error
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command group
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-08-31 01:32:00Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Arguments: 'exec  4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 sh -c "cat /etc/*release | grep ^ID"'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603766.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Process started with process id 1603766, waiting for process exit.
+[2023-08-31 01:32:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-08-31 01:32:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9c9e8eff-071a-4cf8-a771-7bddc20af000', success rate: 1/1.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Finished process 1603766 with exit code 0, and elapsed time 00:00:00.1436042.
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Externals': '/home/tantawi/Desktop/Assignments/actions-runner/externals'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:00Z INFO HostContext] Well known directory 'Work': '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi -e "STATE_isPost" -e "STATE_setSafeDirectory" -e "STATE_repositoryPath" -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4 /__e/node16/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603790.
+[2023-08-31 01:32:00Z INFO ProcessInvokerWrapper] Process started with process id 1603790, waiting for process exit.
+[2023-08-31 01:32:00Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2023-08-31 01:32:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9c9e8eff-071a-4cf8-a771-7bddc20af000', success rate: 1/1.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Finished process 1603790 with exit code 0, and elapsed time 00:00:00.5144682.
+[2023-08-31 01:32:01Z INFO CreateStepSummaryCommand] Step Summary file (/home/tantawi/Desktop/Assignments/actions-runner/_work/_temp/_runner_file_commands/step_summary_8509f6e9-13a9-4c62-8ae3-0ac36abb5fce) is empty; skipping attachment upload
+[2023-08-31 01:32:01Z INFO StepsRunner] Step result: 
+[2023-08-31 01:32:01Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node16",
+  "stage": "Post",
+  "stepId": "9c9e8eff-071a-4cf8-a771-7bddc20af000",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-08-31T01:32:00.459867Z",
+  "finishTime": "2023-08-31T01:32:01.1363516Z"
+}.
+[2023-08-31 01:32:01Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-08-31 01:32:01Z INFO StepsRunner] Current state: job state = ''
+[2023-08-31 01:32:01Z INFO StepsRunner] Processing step: DisplayName='Stop containers'
+[2023-08-31 01:32:01Z INFO StepsRunner] Evaluating: always()
+[2023-08-31 01:32:01Z INFO StepsRunner] Result: true
+[2023-08-31 01:32:01Z INFO StepsRunner] Starting the step.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Arguments: 'rm --force 4ddc9efe56ac989b4286f41b7a4d951a13334f4d7dc90ac5f2649b97bdb925a4'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603901.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Process started with process id 1603901, waiting for process exit.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_8615dfaf-7ef8-510a-52bc-76337457853a.1
+[2023-08-31 01:32:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9c9e8eff-071a-4cf8-a771-7bddc20af000', success rate: 1/1.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd8fa4c93-f51e-4a93-86c6-0c978817c7a2', success rate: 1/1.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Finished process 1603901 with exit code 0, and elapsed time 00:00:00.3083059.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Arguments: 'network rm github_network_b65ef11e247a4d0492c34244a598b649'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Working directory: '/home/tantawi/Desktop/Assignments/actions-runner/_work/assignment-1-MohamedElTantawi/assignment-1-MohamedElTantawi'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1603941.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Process started with process id 1603941, waiting for process exit.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd8fa4c93-f51e-4a93-86c6-0c978817c7a2', success rate: 1/1.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-31 01:32:01Z INFO ProcessInvokerWrapper] Finished process 1603941 with exit code 0, and elapsed time 00:00:00.3398166.
+[2023-08-31 01:32:01Z INFO StepsRunner] Step result: 
+[2023-08-31 01:32:01Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-08-31 01:32:01Z INFO StepsRunner] Current state: job state = ''
+[2023-08-31 01:32:01Z INFO JobRunner] Finalize job.
+[2023-08-31 01:32:01Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:01Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:01Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:32:01Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:01Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:01Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:32:01Z INFO JobExtension] Initialize Env context
+[2023-08-31 01:32:01Z INFO JobExtension] Initialize steps context
+[2023-08-31 01:32:01Z INFO JobExtension] Total accessible running process: 268.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 73 (kworker/1:1H-kblockd)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/73/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/73/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 107 (kworker/2:1H-events_highpri)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/107/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/107/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 111 (kworker/0:1H-kblockd)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/111/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/111/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1581412 (kworker/2:3-events)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1581412/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1581412/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1589807 (kworker/0:0-events)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1589807/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1589807/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1593762 (kworker/3:2-mm_percpu_wq)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1593762/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1593762/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1593791 (kworker/u16:46-phy0)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1593791/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1593791/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1594383 (kworker/u16:0-writeback)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1594383/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1594383/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1595114 (kworker/0:3-events)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1595114/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1595114/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1596290 (kworker/u16:5-ext4-rsv-conversion)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1596290/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1596290/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1597225 (kworker/3:1-rcu_gp)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1597225/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1597225/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1601497 (kworker/u16:6-writeback)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1601497/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1601497/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1603183 (nm-dispatcher)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1603183/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1603183/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1603932 (systemd-udevd)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1603932/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1603932/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1603936 (systemd-udevd)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1603936/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1603936/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Inspecting process environment variables. PID: 1603937 (systemd-udevd)
+[2023-08-31 01:32:01Z INFO LinuxProcessExtensions] Read env from /proc/1603937/environ
+[2023-08-31 01:32:01Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/1603937/environ' is denied.
+[2023-08-31 01:32:01Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2023-08-31 01:32:01Z INFO JobExtension] Connectivity check result: https://acghubeus0.actions.githubusercontent.com/_apis/health: OK
+[2023-08-31 01:32:01Z INFO JobExtension] Connectivity check result: https://actions-results-receiver-production.githubapp.com/health: OK
+[2023-08-31 01:32:01Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_9c9e8eff-071a-4cf8-a771-7bddc20af000.1
+[2023-08-31 01:32:01Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "e9a53303-a819-44ff-ae39-00a27d783d7d",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-08-31T01:32:01.8292086Z",
+  "finishTime": "2023-08-31T01:32:01.929806Z"
+}.
+[2023-08-31 01:32:01Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2023-08-31 01:32:01Z INFO JobRunner] Completing the job execution context.
+[2023-08-31 01:32:01Z INFO JobRunner] Shutting down the job server queue.
+[2023-08-31 01:32:01Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2023-08-31 01:32:03Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2023-08-31 01:32:04Z INFO JobServerQueue] All queue process task stopped.
+[2023-08-31 01:32:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd8fa4c93-f51e-4a93-86c6-0c978817c7a2', success rate: 1/1.
+[2023-08-31 01:32:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e9a53303-a819-44ff-ae39-00a27d783d7d', success rate: 1/1.
+[2023-08-31 01:32:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0e10f8dd-85b5-5bee-19c6-47fc7db6f171', success rate: 1/1.
+[2023-08-31 01:32:04Z INFO JobServerQueue] Web console line queue drained.
+[2023-08-31 01:32:04Z INFO JobServerQueue] Uploading 4 files in one shot.
+[2023-08-31 01:32:11Z INFO JobServerQueue] Try to upload 4 log files or attachments, success rate: 4/4.
+[2023-08-31 01:32:11Z INFO JobServerQueue] File upload queue drained.
+[2023-08-31 01:32:11Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-08-31 01:32:11Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2023-08-31 01:32:11Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:32:11Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_d8fa4c93-f51e-4a93-86c6-0c978817c7a2.1
+[2023-08-31 01:32:12Z INFO JobServerQueue] Got a step log file to send to results service.
+[2023-08-31 01:32:12Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_e9a53303-a819-44ff-ae39-00a27d783d7d.1
+[2023-08-31 01:32:14Z INFO JobServerQueue] Got a job log file to send to results service.
+[2023-08-31 01:32:14Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, /home/tantawi/Desktop/Assignments/actions-runner/_diag/blocks/da5db77c-7fad-4ac4-b5e1-025b5df0e0b7_0e10f8dd-85b5-5bee-19c6-47fc7db6f171.1
+[2023-08-31 01:32:15Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2023-08-31 01:32:15Z INFO JobServerQueue] Results upload queue drained.
+[2023-08-31 01:32:15Z INFO JobServerQueue] Timeline update queue drained.
+[2023-08-31 01:32:15Z INFO JobServerQueue] Disposing job server ...
+[2023-08-31 01:32:15Z INFO JobServerQueue] Disposing results server ...
+[2023-08-31 01:32:15Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2023-08-31 01:32:15Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/tantawi/Desktop/Assignments/actions-runner/_work/_temp
+[2023-08-31 01:32:15Z INFO HostContext] Well known directory 'Bin': '/home/tantawi/Desktop/Assignments/actions-runner/bin'
+[2023-08-31 01:32:15Z INFO HostContext] Well known directory 'Root': '/home/tantawi/Desktop/Assignments/actions-runner'
+[2023-08-31 01:32:15Z INFO HostContext] Well known directory 'Diag': '/home/tantawi/Desktop/Assignments/actions-runner/_diag'
+[2023-08-31 01:32:15Z INFO HostContext] Well known config file 'Telemetry': '/home/tantawi/Desktop/Assignments/actions-runner/_diag/.telemetry'
+[2023-08-31 01:32:15Z INFO JobRunner] Raising job completed event
+[2023-08-31 01:32:16Z INFO Worker] Job completed.
