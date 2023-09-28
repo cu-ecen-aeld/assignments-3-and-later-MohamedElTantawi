@@ -1,5 +1,13 @@
 #include "systemcalls.h"
-
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include<error.h>
+#include<errno.h>
+#include <fcntl.h>
 /**
  * @param cmd the command to execute with system()
  * @return true if the command in @param cmd was executed
@@ -16,8 +24,13 @@ bool do_system(const char *cmd)
  *   and return a boolean true if the system() call completed with success
  *   or false() if it returned a failure
 */
-
-    return true;
+	int x = system(cmd);
+	if(x==0){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
 
 /**
@@ -58,10 +71,65 @@ bool do_exec(int count, ...)
  *   as second argument to the execv() command.
  *
 */
+	pid_t child_pid = fork();
+    
+    if (child_pid == -1)
+    {
+        perror("Fork failed");
+        return false;
+    }
+    
+    if (child_pid == 0)
+    {
+        // This is the child process.
+        // Execute the command in the child process.
+        execv(command[0], command);
+        // If execv() fails, print an error message.
+        perror("execv");
+        exit(EXIT_FAILURE);
+    }
+    else
+    {
+        // This is the parent process.
+        // Wait for the child to complete.
+        int status;
+        if (waitpid(child_pid, &status, 0) == -1)
+        {
+            perror("Wait failed");
+            return false;
+        }
 
-    va_end(args);
-
-    return true;
+        // Check if the child process terminated normally.
+        if (WIFEXITED(status))
+        {
+            // The child process terminated normally.
+            int exit_status = WEXITSTATUS(status);
+            if (exit_status == 0)
+            {
+                // Command executed successfully.
+                return true;
+            }
+            else
+            {
+                // Command executed, but returned an error.
+                fprintf(stderr, "Command exited with status %d\n", exit_status);
+                return false;
+            }
+        }
+        else if (WIFSIGNALED(status))
+        {
+            // The child process was terminated by a signal.
+            int signal_num = WTERMSIG(status);
+            fprintf(stderr, "Command terminated by signal %d\n", signal_num);
+            return false;
+        }
+        else
+        {
+            // Something unexpected happened.
+            fprintf(stderr, "Command terminated abnormally\n");
+            return false;
+        }
+    }
 }
 
 /**
@@ -92,8 +160,81 @@ bool do_exec_redirect(const char *outputfile, int count, ...)
  *   The rest of the behaviour is same as do_exec()
  *
 */
+	int fd = open(outputfile, O_WRONLY | O_TRUNC | O_CREAT, 0644);
+    if (fd < 0)
+    {
+        perror("open");
+        return false;
+    }
 
-    va_end(args);
+    pid_t child_pid = fork();
 
-    return true;
+    if (child_pid == -1)
+    {
+        perror("Fork failed");
+        close(fd);
+        return false;
+    }
+
+    if (child_pid == 0)
+    {
+        // This is the child process.
+        // Redirect standard output to the specified file.
+        if (dup2(fd, STDOUT_FILENO) < 0)
+        {
+            perror("dup2");
+            close(fd);
+            exit(EXIT_FAILURE);
+        }
+        close(fd);
+
+        // Execute the command in the child process.
+        execvp(command[0], command);
+        // If execvp() fails, print an error message.
+        fprintf(stderr, "execvp failed: %s\n", strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+    else
+    {
+        // This is the parent process.
+        // Wait for the child to complete.
+        int status;
+        if (waitpid(child_pid, &status, 0) == -1)
+        {
+            perror("Wait failed");
+            close(fd);
+            return false;
+        }
+
+        // Check if the child process terminated normally.
+        if (WIFEXITED(status))
+        {
+            // The child process terminated normally.
+            int exit_status = WEXITSTATUS(status);
+            if (exit_status == 0)
+            {
+                // Command executed successfully.
+                return true;
+            }
+            else
+            {
+                // Command executed, but returned an error.
+                fprintf(stderr, "Command exited with status %d\n", exit_status);
+                return false;
+            }
+        }
+        else if (WIFSIGNALED(status))
+        {
+            // The child process was terminated by a signal.
+            int signal_num = WTERMSIG(status);
+            fprintf(stderr, "Command terminated by signal %d\n", signal_num);
+            return false;
+        }
+        else
+        {
+            // Something unexpected happened.
+            fprintf(stderr, "Command terminated abnormally\n");
+            return false;
+        }
+    }
 }
